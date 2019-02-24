@@ -1,5 +1,6 @@
 .idea/
 target/
+log/
 *.iml
 nb-configuration.xml
 atlassian-ide-plugin.xml
