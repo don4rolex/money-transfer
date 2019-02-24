@@ -23,8 +23,12 @@ import static java.util.Objects.requireNonNull;
 @Singleton
 public class AccountHandler {
 
+  private final AccountRepository accountRepository;
+
   @Inject
-  private AccountRepository accountRepository;
+  public AccountHandler(AccountRepository accountRepository) {
+    this.accountRepository = accountRepository;
+  }
 
   /**
    * Create a new account
